@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply  bg-[#E8E8E8] hover:bg-[#1F2937] text-[#BB8506]   border-b-2 border-b-[#BB8506]  hover:border-b-[#BB8506] font-bold py-2 px-4 rounded;
+  }
+}
