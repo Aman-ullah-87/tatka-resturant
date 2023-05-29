@@ -13,5 +13,6 @@ module.exports = {
     'react-refresh/only-export-components': 'warn',
     "react/prop-types": "off",
     "quotes": 0,
+    "react/no-unescaped-entities": 0
   },
 }

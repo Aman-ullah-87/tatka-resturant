@@ -1,49 +1,50 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link,  } from "react-router-dom";
 
 const Navbar = () => {
+ 
   const [isOpen, setIsOpen] = useState(false);
   const desktopMenu = (
     <>
       <Link to="/" className="mr-8 hover:text-gray-300">
         Home
       </Link>
-      <Link to='/contact' className="mr-8 hover:text-gray-300">
+      <Link to="/contact" className="mr-8 hover:text-gray-300">
         Contact us
       </Link>
-      <Link to='/dashboard' className="mr-8 hover:text-gray-300">
+      <Link to="/dashboard" className="mr-8 hover:text-gray-300">
         Dashboard
       </Link>
-      <Link to='/menu' className="mr-8 hover:text-gray-300">
+      <Link to="/menu" className="mr-8 hover:text-gray-300">
         Our menu
       </Link>
-      <Link to='/shop' className="mr-8 hover:text-gray-300">
-        Shop
+      <Link to="/login" className="mr-8 hover:text-gray-300">
+       Login
       </Link>
     </>
   );
   const mobileMenu = (
     <>
       <Link
-        to=''
+        to=""
         className="block px-3 py-2 rounded-md text-gray-300 hover:text-white hover:bg-gray-700"
       >
         Solutions
       </Link>
       <Link
-        to=''
+        to=""
         className="block px-3 py-2 rounded-md text-gray-300 hover:text-white hover:bg-gray-700"
       >
         Prices
       </Link>
       <Link
-        to=''
+        to=""
         className="block px-3 py-2 rounded-md text-gray-300 hover:text-white hover:bg-gray-700"
       >
         About
       </Link>
       <Link
-        to=''
+        to=""
         className="block px-3 py-2 rounded-md text-gray-300 hover:text-white hover:bg-gray-700"
       >
         Contact
@@ -56,7 +57,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center py-7 px-5">
         {/* Site logo and Name */}
         <Link
-          to='/'
+          to="/"
           className="flex flex-shrink-0 title-font font-medium items-center text-gray-900 md:mb-0"
         >
           <svg
